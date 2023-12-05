@@ -1,0 +1,27 @@
+<div class="w-screen h-screen fixed inset-0 overflow-hidden">
+  <img src="/images/os.svg" class="w-full" />
+  <div class="ball w-5 h-5 bg-[purple] rounded-full"></div>
+</div>
+
+<style>
+  .ball {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+
+    offset-path: path("M10 80 Q 77.5 10, 145 80 T 280 80");
+    offset-distance: 0%;
+
+    animation: red-ball 2s linear alternate infinite;
+  }
+
+  @keyframes red-ball {
+    from {
+      offset-distance: 0%;
+    }
+    to {
+      offset-distance: 100%;
+    }
+  }
+</style>
