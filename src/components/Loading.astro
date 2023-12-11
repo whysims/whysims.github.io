@@ -1,3 +1,10 @@
+<script>
+  setTimeout(() => {
+    document?.querySelector("#loading")?.classList.remove("flex");
+    document?.querySelector("#loading")?.classList.add("hidden");
+  }, 3000);
+</script>
+
 <div
   id="loading"
   class="w-full h-full fixed inset-0 overflow-hidden flex items-center justify-center bg-black"
@@ -29,13 +36,6 @@
     </g>
   </svg>
 </div>
-
-<script>
-  setTimeout(() => {
-    document?.querySelector("#loading")?.classList.remove("flex");
-    document?.querySelector("#loading")?.classList.add("hidden");
-  }, 3000);
-</script>
 
 <style>
   .group-id {
